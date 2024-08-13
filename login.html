@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-
+   scale=1.0">
+    <title>Tourism Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+<section class="header">
+    <nav>
+       <div class="logo">
+        <a href="index.html"><img src="images/travel logo.png" class="picture"></a>
+        <a href="index.html"><img src="images/logo name.png" class="name" height="90" width="100" alt="IRIS"></a>
+      </div>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="package.html">TOUR PACKAGES</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+               <li><a href="login.html">LOGIN</a></li>
+            </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>   
+      </nav>
+  
+<div id="login-form" class="login-page">
+   <div class="form-box">
+      <div class="button-box">
+         <div id="btn"></div>
+         <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+         <button type="button" onclick="register()" class="toggle-btn">Register</button>
+      </div>
+      <form id="login" class="input-group-login">
+         <input type="text" class="input-field" placeholder="Email Id"required>
+         <input type="password" class="input-field" placeholder="Enter Password"required>
+         <input type="checkbox" class="check-box"><span>Remember Password</span>
+         <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form id="register" class="input-group-register">
+         <input type="text" class="input-field" placeholder="First Name" required>
+         <input type="text" class="input-field" placeholder="Last Name" required>
+         <input type="email" class="input-field" placeholder="Email Id" required>
+         <input type="password" class="input-field" placeholder="Enter Password" required>
+         <input type="password" class="input-field" placeholder="Confirm password" required>
+         <input type="checkbox" class="check-box"><span>I agree the terms and conditions</span>
+         <button type="submit" class="submit-btn">Register</button> 
+      </form>
+   </div>
+</div>
+
+
+  
+
+</section>
+
+<script>
+   var x=document.getElementById("login");
+   var y=document.getElementById("register");
+   var z=document.getElementById("btn");
+   function register(){
+      x.style.left= "-400px";
+      y.style.left= "50px";
+      z.style.left= "110px";
+   }
+   function login(){
+      x.style.left="50px";
+      y.style.left="450px";
+      z.style.left="0px";
+   }
+</script>
+
+<script>
+
+   var navLinks = document.getElementById("navLinks");
+   function showMenu(){
+      navLinks.style.right = "0";
+   }
+   function hideMenu(){
+      navLinks.style.right = "-200px";
+   }
+
+</script>
+
+
+
+
+
+<section class="footer">
+   <h2>About Us</h2>
+   <p>"Travel is the only thing you buy that makes you richer".We completely swear this and belive in fulfilling travel dreams<br> that make you invariably rich by the day.We inspire our customers to live a rich life,full of unforgettable travel experiences.<br><br>Our mission is not just to be a travel agency which helps you book a holiday; we want to be your travel partner<br> who would go an extra mile to help you choose an ideal destination and learn more about the place you have been dreaming to visit.</p>
+   <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+   </div>
+   <p>Made with <i class="fa fa-heart-o"></i> by It's Travel Time</p>
+
+
+
+</section>
+ 
+
+
+
+
+
+
+
+
+
+ </body>
+ </html>   
